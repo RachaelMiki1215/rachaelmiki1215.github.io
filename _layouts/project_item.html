@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <div class="grid-container">
+      
+      {%- include top-navbar.html -%}
+
+      <div class="side-navbar">
+        {%- for project in site.projects -%}
+          {%- if page.url contains project.url -%}
+            <a href="{{ project.url }}" style="color: lightcoral">{{ project.title }}</a>
+          {%- else -%}
+            <a href="{{ project.url }}">{{ project.title }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <main class="content-area">
+      </main>
+
+      {%- include footer.html -%}
+
+    </div>
+
+  </body>
+
+</html>

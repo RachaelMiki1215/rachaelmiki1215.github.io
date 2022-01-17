@@ -4,6 +4,5 @@
 
 layout: default
 title: Home
+show-in-nav: false
 ---
-
-<h1>Hello</h1>

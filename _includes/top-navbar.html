@@ -1,0 +1,13 @@
+<header class="title-area">
+    <a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+  </header>
+  <navbar class="top-navbar">
+    {%- assign pages = site.pages | where: "show-in-nav", true | sort: "nav-display-order" -%}
+    {%- for p in pages -%}
+      {%- if page.url contains p.url -%}
+        <a href="{{ site.baseurl }}{{ p.url }}" style="color: lightcoral">{{ p.title | escape }}</a>
+      {%- else -%}
+        <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title | escape }}</a>
+      {%- endif -%}
+    {%- endfor -%}
+  </navbar>
