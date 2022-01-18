@@ -1,3 +1,19 @@
 1. Cannot override css style w/ folder asset/css/style.scss.
     --> Turns out you need to mimic the structure of the main css file inside _site/assets.
         In my case, this was _site/assets/main.css, so I needed to create assets/main.scss in root dir.
+2. Cannot remove "Home" from navigation bar.
+    --> Added new parameter "show-on-navbar" to frontmatter YAML.
+        In _includes/top-navbar.html, filtered pages w/ default template based on such criteria.
+3. Want to list projects on portfolio page and have individual pages for each project.
+    --> In _config.yml, added the following section -
+            collections:
+                projects
+        Under root dir, created new folder named "_projects" to store individual project markdown docs.
+        In _layouts, created new template "project_items.html" to use for individual project pages.
+        Modified default template so that the side navbar is not included.
+        Created new template for portfolio top page which lists out the projects on sidenav.
+4. Want to highlight the page/section user is currently viewing in top & side navbar.
+    --> Implemented Liquid Template Language If logic so that if the url of the current page contains the url of that navbar link, then item is highlighted.
+5. Want to put Gravatar prof img on About page.
+    --> There is no direct way to pull Gravatar prof img.
+        Use https://github.com/jekyll/jekyll-avatar.
