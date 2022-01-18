@@ -1,4 +1,0 @@
-fonts/DigitalgeometricBold-z8gPL.otf: https://www.fontspace.com/digital-geometric-font-f62002
-icons/13103643251595602084.svg: https://freeicons.io/seo-2/seo-portfolio-case-business-suitcase-icon-43742#
-icons/15465856831547464152.svg: https://freeicons.io/life-style-and-business/cat-bluetooth-book-open-icon-5799#
-icons/2669030621556105711.svg: https://freeicons.io/social-media-icons-5/mail-ru-black-icon-15778
