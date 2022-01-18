@@ -8,21 +8,54 @@
     src: url('fonts/DigitalgeometricBold-z8gPL.otf');
 }
 
+* {
+    color: whitesmoke;
+    font-size: large;
+}
+
 body {
     margin: 0px;
     padding: 0px;
-    font-family: monospace;
     background-color: #404040;
-    color: whitesmoke;
-    font-size: large;
+    font-family: monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: titleFont;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+p, ul, ol, dl {
+    margin-top: 20px;
 }
 
 a, a:link {
     color: lightcoral;
 }
-
 a:visited, a:active {
     color: lightseagreen;
+}
+
+input, textarea {
+    background-color: #303030;
+    border: none;
+    font-family: monospace;
+}
+
+input[type=submit], button {
+    background-color: #303030;
+    padding: 15px 20px;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type=submit]:hover, button:hover {
+    color: lightcoral;
 }
 
 .grid-container {
@@ -65,6 +98,7 @@ a:visited, a:active {
     a {
         display: block;
         padding: 10px;
+        overflow-wrap: break-word;
     }
 }
 
@@ -72,6 +106,7 @@ a:visited, a:active {
     grid-column: 2;
     grid-row: 2;
     padding: 10px;
+    overflow-x: hidden;
 }
 
 .footer-area {
@@ -82,6 +117,10 @@ a:visited, a:active {
     justify-content: center;
     align-items: center;
     text-align: center;
+    img {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 .title-area, .top-navbar, .side-navbar {
@@ -94,5 +133,18 @@ a:visited, a:active {
     }
     a:hover {
         color: lightcoral;
+    }
+}
+
+.project-parameters {
+    width: 500px;
+    background-color: #303030;
+    border-radius: 10px;
+    padding: 10px;
+    dt {
+        font-weight: bold;
+    }
+    dd {
+        margin-left: 20px;
     }
 }
