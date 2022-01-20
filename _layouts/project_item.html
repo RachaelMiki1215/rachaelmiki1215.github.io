@@ -20,6 +20,7 @@
 
       <main class="content-area">
         <h1>{{ page.title }}</h1>
+        <div style="font-size: small; margin-bottom: 20px;">Updated: {{ page.updated }}</div>
         <div>{{ page.short-description }}</div>
         <div class="project-parameters">
           <d1>
@@ -36,19 +37,20 @@
                   </a>
               {%- endcase -%}
             </dd>
-            <dt>Distributed: </dt>
-            <dd>
-              {%- case page.distributed.site -%}
-                {%- when "NuGet" -%}
-                  <a href="{{ page.distributed.url }}" target="_blank">NuGet</a>
-              {%- endcase -%}
-            </dd>
+            {%- if page.distributed -%}
+              <dt>Distributed: </dt>
+              <dd>
+                {%- case page.distributed.site -%}
+                  {%- when "NuGet" -%}
+                    <a href="{{ page.distributed.url }}" target="_blank">NuGet</a>
+                {%- endcase -%}
+              </dd>
+            {%- endif -%}
           </d1>
         </div>
         <div>
           {{ content }}
         </div>
-        <div style="font-size: small;">Updated: {{ page.updated }}</div>
       </main>
 
       {%- include footer.html -%}
