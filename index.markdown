@@ -8,4 +8,4 @@ show-in-nav: false
 ---
 
 # Under Construction
-Hello, please feel free to look around, specifically up there!!
+Hello, please feel free to look around, specifically in the <a href="/portfolio/">Portfolio</a>!!
