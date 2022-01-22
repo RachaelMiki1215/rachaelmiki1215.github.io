@@ -31,6 +31,9 @@ collections:
   projects:
     output: true
     permalink: /portfolio/:collection/:title
+  knowledge-base:
+    output: true
+    permalink: /knowledge-base/:title
 
 # Build settings
 theme: minima
