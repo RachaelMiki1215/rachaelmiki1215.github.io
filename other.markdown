@@ -3,7 +3,7 @@ layout: other_top
 title: Other
 permalink: /other/
 show-in-nav: true
-nav-display-order: 4
+nav-display-order: 5
 
 attributes:
   - name: digital geometric Font
@@ -27,11 +27,18 @@ attributes:
     img: ''
     link: https://formspree.io/
     comment: Service which allows submitting forms in static websites like GitHub Pages.
-  - name: "GitHub mark logo (Light Theme, 32px)"
+  - name: "GitHub icon logo (Light Theme, 32px)"
     file: /assets/icons/GitHub-Mark-Light-32px.png
     type: icon
     css-font: ''
     img: /assets/icons/GitHub-Mark-Light-32px.png
     link: https://github.com/logos
-    comment: GitHub logo used for social media links.
+    comment: GitHub icon logo used for social media links.
+  - name: "Twitter icon logo (White colored)"
+    file: "/assets/icons/2021 Twitter logo - white.png"
+    type: icon
+    css-font: ''
+    img: "/assets/icons/2021 Twitter logo - white.png"
+    link: https://about.twitter.com/en/who-we-are/brand-toolkit
+    comment: Twitter icon logo used for social media links.
 ---
