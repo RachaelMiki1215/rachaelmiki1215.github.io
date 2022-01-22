@@ -148,3 +148,17 @@ input[type=submit]:hover, button:hover {
         margin-left: 20px;
     }
 }
+
+.tryMeOut {
+    display: inline-block;
+    background-color: #202020;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    a, a:visited, a:active, a:link, a:hover {
+        text-decoration: none;
+    }
+}
