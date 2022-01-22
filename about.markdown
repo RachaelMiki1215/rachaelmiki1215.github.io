@@ -3,7 +3,7 @@ layout: default
 title: About
 permalink: /about/
 show-in-nav: true
-nav-display-order: 2
+nav-display-order: 3
 ---
 
 {% assign gitHubUser="RachaelMiki1215" %}
