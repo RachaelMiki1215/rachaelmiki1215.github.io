@@ -28,15 +28,17 @@
             <dd>{{ page.keywords | join: ", " }}</dd>
             <dt>Languages: </dt>
             <dd>{{ page.language | join: ", " }}</dd>
-            <dt>Source Code: </dt>
-            <dd>
-              {%- case page.source-code.site -%}
-                {%- when "GitHub" -%}
-                  <a href="{{ page.source-code.url }}" alt="GitHub" target="_blank">
-                    <img src="/assets/icons/GitHub-Mark-Light-32px.png">
-                  </a>
-              {%- endcase -%}
-            </dd>
+            {%- if page.source-code -%}
+              <dt>Source Code: </dt>
+              <dd>
+                {%- case page.source-code.site -%}
+                  {%- when "GitHub" -%}
+                    <a href="{{ page.source-code.url }}" alt="GitHub" target="_blank">
+                      <img src="/assets/icons/GitHub-Mark-Light-32px.png">
+                    </a>
+                {%- endcase -%}
+              </dd>
+            {%- endif -%}
             {%- if page.distributed -%}
               <dt>Distributed: </dt>
               <dd>
@@ -45,6 +47,11 @@
                     <a href="{{ page.distributed.url }}" target="_blank">NuGet</a>
                 {%- endcase -%}
               </dd>
+            {%- endif -%}
+            {%- if page.try-me-url -%}
+              <dt>
+                <a class="tryMeOut" href="{{ page.try-me-url }}" target="_blank">Try me out!</a>
+              </dt>
             {%- endif -%}
           </d1>
         </div>
