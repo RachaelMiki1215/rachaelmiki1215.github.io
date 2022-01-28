@@ -3,7 +3,7 @@ layout: other_top
 title: Other
 permalink: /other/
 show-in-nav: true
-nav-display-order: 5
+nav-display-order: 6
 
 attributes:
   - name: digital geometric Font
@@ -41,4 +41,11 @@ attributes:
     img: "/assets/icons/2021 Twitter logo - white.png"
     link: https://about.twitter.com/en/who-we-are/brand-toolkit
     comment: Twitter icon logo used for social media links.
+  - name: "Favicon"
+    file: "/assets/icons/favicon-16x16.png"
+    type: icon
+    css-font: ''
+    img: "/assets/icons/favicon-16x16.png"
+    link: https://www.websiteplanet.com/webtools/favicon-generator/
+    comment: A quick, easy, and good-looking favicon.
 ---
