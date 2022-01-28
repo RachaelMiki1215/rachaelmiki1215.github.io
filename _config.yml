@@ -34,6 +34,9 @@ collections:
   knowledge-base:
     output: true
     permalink: /knowledge-base/:title
+  blog:
+    output: true
+    permalink: /blog/:title
 
 # Build settings
 theme: minima
