@@ -3,7 +3,7 @@ layout: default
 title: About
 permalink: /about/
 show-in-nav: true
-nav-display-order: 3
+nav-display-order: 4
 ---
 
 {% assign gitHubUser="RachaelMiki1215" %}
@@ -26,8 +26,6 @@ nav-display-order: 3
     .name {
         grid-column: 1;
         grid-row: 2;
-        font-family: titleFont;
-        font-size: 24pt;
     }
 
     .description {
@@ -49,8 +47,12 @@ nav-display-order: 3
 </style>
 
 <div class="content-grid">
-    <div class="role">Author</div>
-    <div class="name">RachaelMiki1215</div>
+    <div class="role">
+        <h2>Author</h2>
+    </div>
+    <div class="name">
+        <h1>RachaelMiki1215</h1>
+    </div>
     <div class="description">
         <p>
             Hello, thank you for visiting my page.
