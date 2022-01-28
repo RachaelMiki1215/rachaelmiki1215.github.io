@@ -3,7 +3,7 @@ layout: default
 title: Contact
 permalink: /contact/
 show-in-nav: true
-nav-display-order: 4
+nav-display-order: 5
 ---
 
 <style>
