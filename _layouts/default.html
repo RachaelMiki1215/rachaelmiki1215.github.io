@@ -3,19 +3,12 @@
 
   {%- include head.html -%}
 
-  <body>
-    <div class="grid-container">
-      
-      {%- include top-navbar.html -%}
-
-      <main style="grid-column: 1 / span 2; grid-row: 2; padding: 10px">
-        {{ content }}
-      </main>
-
-      {%- include footer.html -%}
-
-    </div>
-
+  <body onload="init()">
+    {%- include header.html -%}
+    <main>
+      {{ content }}
+    </main>
+    {%- include footer.html -%}
   </body>
 
 </html>
