@@ -6,6 +6,5 @@ layout: default
 title: Home
 show-in-nav: false
 ---
-
-# Under Construction
-Hello, please feel free to look around, specifically in the <a href="/portfolio/">Portfolio</a>!!
+<!--- <script type="module" src="assets/js/index_3d_animation.js"></script> --->
+Still no flashy CS/JSS eyecatcher here :/
