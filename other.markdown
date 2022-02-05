@@ -12,7 +12,7 @@ attributes:
     css-font: titleFont
     img: ''
     link: https://www.fontspace.com/digital-geometric-font-f62002
-    comment: An awesome looking font for site title and menu.
+    comment: An awesome looking font for site title.
   - name: Jekyll Avatar
     file: ''
     type: plugin
