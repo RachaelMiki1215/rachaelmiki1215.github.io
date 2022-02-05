@@ -1,6 +1,7 @@
 ---
-layout: project_item
-id: 1
+type: project
+layout: collection_item
+id: 2
 updated: "2022-01-21"
 title: "js sketching script"
 short-description: "Simple sketchpad coded with HTML, CSS, and Javascript."
