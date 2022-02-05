@@ -1,0 +1,36 @@
+{
+  "name": "rachaelmiki1215.github.io",
+  "version": "1.0.0",
+  "description": "RachaelMiki1215's GitHub Pages website.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ".\\\"node_modules/.bin/webpack\" --watch | bundle exec jekyll serve --livereload --incremental",
+    "build": ".\\\"node_modules/.bin/webpack\" | bundle exec jekyll build",
+    "bundle-prod": ".\\\"node_modules/.bin/webpack\" --config ./webpack.config.js --mode production",
+    "bundle-dev": ".\\\"node_modules/.bin/webpack\" --config ./webpack.config.js --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RachaelMiki1215/rachaelmiki1215.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RachaelMiki1215/rachaelmiki1215.github.io/issues"
+  },
+  "homepage": "https://github.com/RachaelMiki1215/rachaelmiki1215.github.io#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "lodash": "^4.17.21",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "three": "^0.137.5"
+  },
+  "sideEffects": ["./node_modules/three/*"]
+}
