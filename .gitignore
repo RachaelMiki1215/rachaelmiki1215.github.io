@@ -3,6 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-.webpack.config.js
+webpack.config.js
 node_modules
-.dist/test.html
+dist/test.html
+src
