@@ -5,3 +5,4 @@ _site
 vendor
 .webpack.config.js
 node_modules
+.dist/test.html
