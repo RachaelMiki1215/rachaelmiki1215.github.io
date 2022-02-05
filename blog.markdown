@@ -1,8 +1,10 @@
 ---
-layout: blog_top
+type: blog
+layout: collection_item
 title: Blog
 permalink: /blog/
-show-in-nav: true
+show-in-nav: false
 nav-display-order: 3
+is-top-page: true
 ---
 (Under Construction)
