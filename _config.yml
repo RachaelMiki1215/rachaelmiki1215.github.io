@@ -31,12 +31,12 @@ collections:
   projects:
     output: true
     permalink: /portfolio/:collection/:title
-  knowledge-base:
+  articles:
     output: true
-    permalink: /knowledge-base/:title
-  blog:
+    permalink: knowledge_base/:collection/:title
+  entries:
     output: true
-    permalink: /blog/:title
+    permalink: blog/:collection/:title
 
 # Build settings
 theme: minima
@@ -50,8 +50,7 @@ plugins:
 # the internal "default list".
 #
 # Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
+# their entries' file path in the `include:` list
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
@@ -63,3 +62,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude:
+  - "node_modules"
+  - "webpack.config.js"
+  - "src"
