@@ -1,5 +1,6 @@
 ---
-layout: project_item
+type: project
+layout: collection_item
 id: 1
 updated: "2022-01-17"
 title: "MikisColorTools"
