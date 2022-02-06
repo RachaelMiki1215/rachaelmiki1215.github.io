@@ -1,73 +1,28 @@
 ---
-layout: default
+type: bio
+layout: collection_item
 title: About
 permalink: /about/
 show-in-nav: true
 nav-display-order: 4
+is-top-page: true
 ---
 
 {% assign gitHubUser="RachaelMiki1215" %}
 
-<style>
-    .content-grid {
-        width: 1000px;
-        height: 500px;
-        display: grid;
-        grid-template-columns: 5fr 4fr;
-        grid-template-rows: 50px 80px 1fr;
-    }
+## Author
+# RachaelMiki1215
 
-    .role {
-        grid-column: 1;
-        grid-row: 1;
-        font-size: 18pt;
-    }
+{% avatar {{ gitHubUser }} size=300 %}
 
-    .name {
-        grid-column: 1;
-        grid-row: 2;
-    }
+Hello, thank you for visiting my page.
 
-    .description {
-        grid-column: 1;
-        grid-row: 3;
-        p {
-            margin-bottom: 20px;
-            line-height: 1.5;
-        }
-    }
+My name is <strong>RachaelMiki1215</strong>.  
+I am a self-taught coding/programming hobbyist.  
+Currently, I mostly work with C# and HTML/CSS/Javascript.  
+(And as you see here by this subpar website, I'm really struggling with web development.)
 
-    .prof-img {
-        grid-column: 2;
-        grid-row: 1 / span 3;
-        img {
-            object-fit: cover;
-        }
-    }
-</style>
+I've created this page to showcase my projects.
 
-<div class="content-grid">
-    <div class="role">
-        <h2>Author</h2>
-    </div>
-    <div class="name">
-        <h1>RachaelMiki1215</h1>
-    </div>
-    <div class="description">
-        <p>
-            Hello, thank you for visiting my page.
-        </p>
-        <p>
-            My name is <strong>RachaelMiki1215.</strong>
-            <br>I am a self-taught coding/programming hobbyist.
-            <br>Currently, I mostly work with C#.
-            <br>(And as you see here by this subpar website, I'm really struggling with web development.)
-        </p>
-        <p>
-            I've created this page to showcase my projects.
-        </p>
-    </div>
-    <div class="prof-img">
-        {% avatar {{ gitHubUser }} size=430 %}
-    </div>
-</div>
+
+
