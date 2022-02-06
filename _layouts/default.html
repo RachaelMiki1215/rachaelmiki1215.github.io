@@ -4,10 +4,14 @@
   {%- include head.html -%}
 
   <body onload="init()">
+    <div id="headerBackdrop"></div>
     {%- include header.html -%}
-    <main>
-      {{ content }}
-    </main>
+
+    <div>
+      <main>
+        {{ content }}
+      </main>
+    </div>
     {%- include footer.html -%}
   </body>
 
