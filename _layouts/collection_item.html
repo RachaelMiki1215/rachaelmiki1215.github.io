@@ -4,11 +4,12 @@
   {%- include head.html -%}
 
   <body onload="init()">
+    <div id="headerBackdrop"></div>
     {%- include header.html -%}
+    <hr id="mainSubNavbarHr">
+    {%- include subNavbar.html -%}
 
-    {%- include side-navbar.html -%}
-
-    <div id="main">
+    <div>
       <main>
         {%- if page.is-top-page != true -%}
           <h1>{{ page.title }}</h1>
@@ -17,7 +18,7 @@
           {{ content }}
         </div>
       </main>
-    </main>
+    </div>
 
     {%- include footer.html -%}
   </body>
