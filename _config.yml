@@ -33,10 +33,13 @@ collections:
     permalink: /portfolio/:collection/:title
   articles:
     output: true
-    permalink: knowledge_base/:collection/:title
+    permalink: /knowledge_base/:collection/:title
   entries:
     output: true
-    permalink: blog/:collection/:title
+    permalink: /blog/:collection/:title
+  bio:
+    output: true
+    permalink: /about/:collection/:title
 
 # Build settings
 theme: minima
