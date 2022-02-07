@@ -7,3 +7,4 @@ webpack.config.js
 node_modules
 dist/test.html
 src
+issue_encountered.txt

@@ -70,3 +70,4 @@ exclude:
   - "node_modules"
   - "webpack.config.js"
   - "src"
+  - "issue_encountered.txt"
