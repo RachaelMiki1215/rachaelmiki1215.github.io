@@ -7,4 +7,4 @@ title: Home
 show-in-nav: false
 ---
 <!--- <script type="module" src="assets/js/index_3d_animation.js"></script> --->
-Still no flashy CS/JSS eyecatcher here :/
+Still no flashy CSS/JS eyecatcher here :/
