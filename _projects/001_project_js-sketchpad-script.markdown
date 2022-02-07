@@ -1,7 +1,8 @@
 ---
 type: project
 layout: collection_item
-id: 2
+is-top-page: false
+show-header: true
 updated: "2022-01-21"
 title: "js sketching script"
 short-description: "Simple sketchpad coded with HTML, CSS, and Javascript."
@@ -19,6 +20,7 @@ source-code:
   url: https://github.com/RachaelMiki1215/js-sketching-script
 try-me-url: /pages/js-sketching-script.html
 ---
+
 This project is a simple sketchpad coded with HTML, CSS, and Javascript, based on the **canvas** element supported in HTML5.  
 At present ({{ page.updated }}), the following features exist:
 - Draw on blank canvas

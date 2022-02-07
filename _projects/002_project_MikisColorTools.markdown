@@ -1,7 +1,8 @@
 ---
 type: project
 layout: collection_item
-id: 1
+is-top-page: false
+show-header: true
 updated: "2022-01-17"
 title: "MikisColorTools"
 short-description: ".NET class library extending functionality of System.Drawing.Color."
