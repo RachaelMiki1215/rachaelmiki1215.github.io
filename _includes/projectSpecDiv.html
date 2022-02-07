@@ -1,0 +1,30 @@
+<dl>
+    <dt>Languages</dt>
+    <dd>{{ page.language | join: ", " }}</dd>
+
+    <dt>Keywords</dt>
+    <dd>{{ page.keywords | join: ", " }}</dd>
+
+    <dt>Source Code</dt>
+    <dd>
+        <a href="{{ page.source-code.url }}" target="_blank">
+            {%- if page.source-code.site == 'GitHub' -%}
+                <i class="fab fa-github"></i>
+            {%- endif -%}
+        </a>
+    </dd>
+
+    {%- if page.distributed -%}
+        <dt>Distributed</dt>
+        <dd>
+            <a href="{{ page.distributed.url }}" target="_blank">
+                {{ page.distributed.site }}
+            </a>
+        </dd>
+    {%- endif -%}
+
+    {%- if page.try-me-url -%}
+        <a href="{{ page.try-me-url }}" target="_blank" class="tryMe">Try Me</a>
+    {%- endif -%}
+ 
+</dl>
