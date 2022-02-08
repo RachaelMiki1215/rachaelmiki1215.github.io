@@ -65,18 +65,20 @@ a, a:link, a:visited, a:active {
 }
 
 // TODO: Clean up input/text-area/button styles.
-input, textarea {
+input, textarea, button {
     background-color: $div-color;
     border: none;
     border-radius: 10px;
+}
+
+input, textarea {
+    border: none;
     padding: 5px 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 input[type=submit], button {
-    background-color: $div-color;
     padding: 15px 20px;
-    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
