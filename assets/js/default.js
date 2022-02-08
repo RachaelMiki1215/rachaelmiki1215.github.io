@@ -47,7 +47,7 @@ function changeMainAreaSize() {
     }
     headerBackdrop.style.height = parseInt(mainArea.style.marginTop, 10) + 50 + 'px';
 
-    console.log(footerArea.offsetHeight);
+    //console.log(footerArea.offsetHeight);
 
     mainArea.style.marginBottom = footerArea.offsetHeight + 'px';
 }
