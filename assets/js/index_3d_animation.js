@@ -1,9 +1,7 @@
-import * as THREE from 'https://cdn.skypack.dev/three';
-
 console.log("3D animation script loaded");
 
 const scene = new THREE.Scene();
-//scene.background = new THREE.Color(0x404040);
+scene.background = new THREE.Color(0x404040);
 scene.background = new THREE.Color(0x000000);
 
 var headerArea = Array.from(document.getElementsByTagName('header'))[0];
