@@ -1,10 +1,8 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 title: Home
 show-in-nav: false
 ---
-<!--- <script type="module" src="assets/js/index_3d_animation.js"></script> --->
-Still no flashy CSS/JS eyecatcher here :/
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js" integrity="sha512-NLtnLBS9Q2w7GKK9rKxdtgL7rA7CAS85uC/0xd9im4J/yOL4F9ZVlv634NAM7run8hz3wI2GabaA6vv8vJtHiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/assets/js/index_3d_animation.js"></script> -->
+No flashy content here yet 😑
