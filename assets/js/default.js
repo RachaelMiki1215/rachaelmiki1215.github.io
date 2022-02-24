@@ -23,12 +23,9 @@ function changeMainAreaSize() {
     let sideNavbarAreaHeight = (sideNavbarArea === null) ? 0 : sideNavbarArea.offsetHeight;
     let mainSideHrAreaHeight = (mainSideHrArea === null) ? 0 : mainSideHrArea.offsetHeight;
 
-    //console.log(window.innerWidth);
-
     if (window.innerWidth <= 600) {
         if(sideNavbarArea !== null){
             mainSideHrArea.style.marginTop = headerArea.offsetHeight + 'px';
-            console.log(mainSideHrArea.style.marginTop);
             sideNavbarArea.style.marginTop = headerArea.offsetHeight + mainSideHrAreaHeight + 'px';
         }
         mainArea.style.marginTop = headerArea.offsetHeight + mainSideHrAreaHeight + sideNavbarAreaHeight + 'px';
@@ -46,8 +43,6 @@ function changeMainAreaSize() {
         }
     }
     headerBackdrop.style.height = parseInt(mainArea.style.marginTop, 10) + 50 + 'px';
-
-    //console.log(footerArea.offsetHeight);
 
     mainArea.style.marginBottom = footerArea.offsetHeight + 'px';
 }
