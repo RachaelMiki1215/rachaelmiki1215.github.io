@@ -10,6 +10,7 @@
 
 $background-color: #404040;
 $div-color: #303030;
+$div-color-2: #484848;
 $font-color: #f5f5f5;
 $accent-color: #f08080;
 
@@ -163,6 +164,53 @@ navbar {
     dd {
         margin-left: 40px;
     }
+}
+
+.comparisonTable {
+    border-collapse: collapse;
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    background-color: transparent;
+
+    table, thead, tbody, tr, tr:nth-child(even), th, td {
+        background-color: transparent;
+        border: none;
+    }
+
+    th, td {
+        vertical-align: top;
+    }
+
+    td:first-child, th:first-child {
+        width: 0%;
+        font-weight: bold;
+    }
+
+    td:nth-child(odd), th:nth-child(odd) {
+        background-color: $div-color;
+    }
+    td:nth-child(even), th:nth-child(even) {
+        background-color: $div-color-2;
+    }
+
+    thead th {
+        border-radius: 10px 10px 0 0;
+        font-weight: bold;
+    }
+    tbody tr:last-child td {
+        border-radius: 0 0 10px 10px;
+    }
+
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.highlightedText {
+    padding: 2px 5px;
+    background-color: $accent-color;
 }
 
 #headerBackdrop {
