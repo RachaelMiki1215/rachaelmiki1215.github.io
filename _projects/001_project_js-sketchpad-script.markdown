@@ -10,11 +10,12 @@ keywords:
   - Sketch
   - Sketchpad
   - canvas
+  - jQuery
 language:
   - HTML
   - HTML5
   - CSS
-  - Javascript
+  - JavaScript
 source-code: 
   site: GitHub
   url: https://github.com/RachaelMiki1215/js-sketching-script
