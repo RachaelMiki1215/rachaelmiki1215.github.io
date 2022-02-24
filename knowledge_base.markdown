@@ -1,9 +1,9 @@
 ---
-type: knowledge_base
+type: article
 layout: collection_item
 title: Knowledge Base
 permalink: /knowledge_base/
-show-in-nav: false
+show-in-nav: true
 nav-display-order: 2
 is-top-page: true
 ---

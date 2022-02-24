@@ -19,7 +19,7 @@
         {%- endif -%}
       {%- endfor -%}
 
-    {%- when "knowledge_base" -%}
+    {%- when "article" -%}
       {%- for article in site.articles -%}
         {%- if page.url contains article.url -%}
           <a href="{{ article.url }}" style="color: lightcoral">{{ article.title }}</a>
