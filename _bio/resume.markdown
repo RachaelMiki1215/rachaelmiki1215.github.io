@@ -209,7 +209,7 @@ show-header: false
         <div id="profImgNameSection" style="text-align: center;">
             {% avatar {{ gitHubUser }} size=200 %}
             <h3>Rachael Buxton</h3>
-            <h4>System Engineer</h4>
+            <h5>Software System Engineer</h5>
         </div>
         <hr>
         <h4>Contacts & Socials</h4>
@@ -285,13 +285,23 @@ show-header: false
                     <li>Created VBA modules to aid publication of UI screen/transition specifications. Reduced 10% of time for task.</li>
                 </ul>
             </div>
+            <h5>Freelancer - Data Analysis / Coding</h5>
+            <div class="item">
+                <h6>Fiverr • Nov 2021 ~ Present</h6>
+                Working on various code/script development and Microsoft Excel formula revision requests.
+                <h6>Accomplishments</h6>
+                <ul>
+                    <li>Completed request to create web spider for task automation.</li>
+                    <li>Supported troubleshooting Microsoft Excel formulas.</li>
+                </ul>
+            </div>
         </div>
         <hr>
         <div id="projectsSection">
             <h4>Projects</h4>
             <h5>Work</h5>
-            <h6>Vehicle Reservation System</h6>
             <div class="item">
+                <h6>Vehicle Reservation System</h6>
                 System allowing testing teams to check availability and reserve test vehicles by themselves.
                 <dl class="projectParams">
                     <dt>Development Time</dt>
@@ -301,8 +311,26 @@ show-header: false
                 </dl>
             </div>
             <h5>Personal</h5>
-            <h6>Color Methods .NET Class Library</h6>
             <div class="item">
+                <h6>Simple Employee Database Management Website</h6>
+                Simple example of employee database management website using NodeJS.
+                <dl class="projectParams">
+                    <dt>Development Time</dt>
+                    <dd>1 week</dd>
+                    <dt>Languages/Platforms Used</dt>
+                    <dd>JavaScript (JQuery, NodeJS)</dd>
+                    <dt>Source Code</dt>
+                    <dd>
+                        <a href="https://github.com/RachaelMiki1215/SSquaredEnterprisesPersonnelSystem-NodeJs-Example" target="_blank">https://github.com/RachaelMiki1215/SSquaredEnterprisesPersonnelSystem-NodeJs-Example</a>
+                    </dd>
+                    <dt>Demo</dt>
+                    <dd>
+                        <a href="https://ssquaredenterprisespersonnelsystem-nodejs-example.azurewebsites.net/" target="_blank">https://ssquaredenterprisespersonnelsystem-nodejs-example.azurewebsites.net/</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="item">
+                <h6>Color Methods .NET Class Library</h6>
                 C# .NET class library extending functionality of System.Drawing.Color struct.
                 <dl class="projectParams">
                     <dt>Development Time</dt>
@@ -311,12 +339,12 @@ show-header: false
                     <dd>C#</dd>
                     <dt>Source Code</dt>
                     <dd>
-                        <a href="https://github.com/RachaelMiki1215/MikisColorTools">https://github.com/RachaelMiki1215/MikisColorTools</a>
+                        <a href="https://github.com/RachaelMiki1215/MikisColorTools" target="_blank">https://github.com/RachaelMiki1215/MikisColorTools</a>
                     </dd>
                 </dl>
             </div>
-            <h6>Portfolio Website</h6>
             <div class="item">
+                <h6>Portfolio Website</h6>
                 Website to showcase my projects created using HTML/CSS/JS on top of GitHub Pages with Jekyll.
                 <dl class="projectParams">
                     <dt>Development Time</dt>
@@ -325,17 +353,17 @@ show-header: false
                     <dd>HTML, CSS, Javascript</dd>
                     <dt>Source Code</dt>
                     <dd>
-                        <a href="https://github.com/RachaelMiki1215/rachaelmiki1215.github.io">https://github.com/RachaelMiki1215/rachaelmiki1215.github.io</a>
+                        <a href="https://github.com/RachaelMiki1215/rachaelmiki1215.github.io" target="_blank">https://github.com/RachaelMiki1215/rachaelmiki1215.github.io</a>
                     </dd>
                     <dt>Demo</dt>
                     <dd>
-                        <a href="https://rachaelmiki1215.github.io/">https://rachaelmiki1215.github.io/</a>
+                        <a href="https://rachaelmiki1215.github.io/" target="_blank">https://rachaelmiki1215.github.io/</a>
                     </dd>
                 </dl>
             </div>
-            <h6>Javascript Sketching Tool</h6>
             <div class="item">
-                Sketching tool created by binding Javascript functions to a HTML5 canvas element and buttons.
+                <h6>Javascript Sketching Tool</h6>
+                Sketching tool created using HTML5 canvas element with JavaScript.
                 <dl class="projectParams">
                     <dt>Development Time</dt>
                     <dd>2 days</dd>
@@ -343,11 +371,11 @@ show-header: false
                     <dd>HTML, CSS, Javascript</dd>
                     <dt>Source Code</dt>
                     <dd>
-                        <a href="https://github.com/RachaelMiki1215/js-sketching-script">https://github.com/RachaelMiki1215/js-sketching-script</a>
+                        <a href="https://github.com/RachaelMiki1215/js-sketching-script" target="_blank">https://github.com/RachaelMiki1215/js-sketching-script</a>
                     </dd>
                     <dt>Demo</dt>
                     <dd>
-                        <a href="https://rachaelmiki1215.github.io/pages/js-sketching-script.html">https://rachaelmiki1215.github.io/pages/js-sketching-script.html</a>
+                        <a href="https://rachaelmiki1215.github.io/pages/js-sketching-script/js-sketching-script.html" target="_blank">https://rachaelmiki1215.github.io/pages/js-sketching-script/js-sketching-script.html</a>
                     </dd>
                 </dl>
             </div>
@@ -375,11 +403,15 @@ show-header: false
                     <div class="skillLevel">5</div>
                 </li>
                 <li>
-                    <div class="skillName">Javascript</div>
+                    <div class="skillName">JavaScript</div>
                     <div class="skillLevel">3</div>
                 </li>
                 <li>
                     <div class="skillName">CSS</div>
+                    <div class="skillLevel">4</div>
+                </li>
+                <li>
+                    <div class="skillName">Microsoft Power Platform</div>
                     <div class="skillLevel">4</div>
                 </li>
             </ul>
