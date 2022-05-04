@@ -31,4 +31,4 @@ The following features/items exist as of now:
 * Check employees registered under each manager (director)
 * Add employee
 
-I am not sure if I will update this at all in the future, however anyways it was a good entry way for fullstack development.
+I am not sure if I will update this at all in the future, but anyways it was a good entry way for fullstack development.
