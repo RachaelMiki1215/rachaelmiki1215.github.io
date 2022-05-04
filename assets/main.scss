@@ -37,7 +37,6 @@ h1, h2, h3, h4, h5, h6 {
     color: $accent-color;
     word-wrap: break-word;
 }
-
 h1 { font-size: 3rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.6rem; }
@@ -46,13 +45,13 @@ h5 { font-size: 1.1rem; }
 h6 { font-size: 1rem; }
 
 hr {
-    width: 98%;
+    width: 80px;
     align-self: center;
-    border-top: 1px dashed whitesmoke;
-    border-bottom: none;
+    border-top: none;
+    border-bottom: 10px dotted $div-color-2;
     border-left: none;
     border-right: none;
-    margin: 10px 0px;
+    margin: 15px 0px;
 }
 
 p, ul, ol, dl {
@@ -70,19 +69,16 @@ input, textarea, button {
     border: none;
     border-radius: 10px;
 }
-
 input, textarea {
     border: none;
     padding: 5px 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 input[type=submit], button {
     padding: 15px 20px;
     cursor: pointer;
     transition: 0.3s;
 }
-
 input[type=submit]:hover, button:hover {
     background-color: $accent-color;
     color: $background-color;
@@ -91,7 +87,6 @@ input[type=submit]:hover, button:hover {
 header, footer, #subNavbar, #mainSubNavbarHr {
     z-index: 10;
 }
-
 header {
     position: fixed;
     display: grid;
@@ -127,7 +122,6 @@ header {
         color: $accent-color;
     }
 }
-
 footer {
     position: fixed;
     bottom: 0;
@@ -137,13 +131,11 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
 main {
     margin: 10px;
     display: flex;
     flex-direction: column;
 }
-
 navbar {
     display: flex;
     align-items: center;
@@ -214,10 +206,11 @@ navbar {
 }
 
 #headerBackdrop {
-    z-index: 5;
+    z-index: 9;
     position: fixed;
     width: 100%;
     background-image: linear-gradient(to bottom, $background-color, rgba(0, 0, 0, 0));
+    pointer-events: none;
 }
 
 #subNavbar {
@@ -290,12 +283,9 @@ navbar {
     }
 }
 
-.tryMe {
+.tryMe, .srcCodeButton, .demoButton {
+    background-color: $background-color;
     display: inline-block;
-    background-color: #202020;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     text-decoration: none;
     border-radius: 10px;
     transition: 0.3s;
@@ -303,10 +293,24 @@ navbar {
         text-decoration: none;
     }
 }
-
-.tryMe:hover {
-    background-color: #f08080;
+.tryMe {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.srcCodeButton, .demoButton {
+    padding: 2px 10px;
+    margin-left: 4px;
+}
+.tryMe:hover, .srcCodeButton:hover, .demoButton:hover {
+    background-color: $accent-color;
     color: $font-color
+}
+.srcCodeButton::after {
+    content: "src";
+}
+.demoButton::before {
+    content: "Demo";
 }
 
 .socialsLink {
@@ -318,7 +322,6 @@ navbar {
     border-radius: 10px;
     transition: 0.3s;
 }
-
 .socialsLink:hover {
     background-color: $accent-color;
 }
@@ -328,4 +331,36 @@ navbar {
     vertical-align: middle;
     justify-content: center;
     margin: auto;
+}
+
+.collapseTitle {
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.arrow {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 16px solid $accent-color;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    transform: scale(0.8);
+}
+.collapseTitle:hover {
+    background-color: $accent-color;
+    transition: 0.3s;
+    * {
+        color: $font-color;
+    }
+    .arrow {
+        border-top: 16px solid $font-color;
+    }
+}
+.collapsed {
+    .arrow {
+        transform: rotate(-90deg) scale(0.8);
+    }
 }
