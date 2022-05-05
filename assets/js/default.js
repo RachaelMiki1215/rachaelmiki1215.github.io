@@ -31,7 +31,6 @@ function init() {
         'resize',
         function(e) {
             if (isPrinting) {
-                /*console.log("printing!!");*/
                 mainArea.style.margin = '0';
             }
             else {
