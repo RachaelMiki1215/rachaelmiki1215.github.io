@@ -143,11 +143,18 @@ navbar {
     justify-content: center;
 }
 
+.updatedDate {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 5px 10px;
+}
+
 .projectDescDl {
-    background-color: #303030;
+    background-color: $div-color;
     padding: 10px 20px;
     display: inline-block;
     border-radius: 10px;
+    margin: 0;
     
     dt {
         font-weight: bold;
@@ -155,6 +162,19 @@ navbar {
     
     dd {
         margin-left: 40px;
+    }
+}
+
+.keywordDiv {
+    background-color: #303030;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+
+    span:not(:first-child) {
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 3px solid $font-color;
     }
 }
 
@@ -216,6 +236,7 @@ navbar {
 #subNavbar {
     position: fixed;
     display: flex;
+
     a {
         padding: 10px;
         overflow-wrap: break-word;
@@ -326,7 +347,7 @@ navbar {
     background-color: $accent-color;
 }
 
-.fab, .fas {
+.fa, .fab, .fas {
     display: inline-block;
     vertical-align: middle;
     justify-content: center;
