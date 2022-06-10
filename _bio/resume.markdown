@@ -5,6 +5,10 @@ title: Resume
 show-in-nav: false
 is-top-page: false
 show-header: false
+keywords:
+  - About
+  - Author
+  - Resume
 ---
 
 {% assign gitHubUser="RachaelMiki1215" %}
@@ -252,8 +256,12 @@ show-header: false
             background-color: transparent;
         }
 
-        header, footer, #subNavbar, #mainSubNavbarHr, #headerBackdrop, #titeArea, .no-print {
-            display: none;
+        main {
+            margin: 0;
+        }
+
+        #titleArea, header, footer, navbar, #menu-hamburger, #sub-navbar, #search-button, #search-box, .no-print {
+            display: none; 
         }
 
         .print {
