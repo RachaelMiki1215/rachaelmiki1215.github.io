@@ -16,10 +16,11 @@ $accent-color: #f08080;
 
 * {
     color: $font-color;
+    transition: 0.3s;
 }
 
 html {
-    height: 100%
+    height: 100%;
 }
 
 body {
@@ -70,77 +71,192 @@ input, textarea, button {
     border-radius: 10px;
 }
 input, textarea {
-    border: none;
     padding: 5px 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 input[type=submit], button {
     padding: 15px 20px;
     cursor: pointer;
-    transition: 0.3s;
 }
 input[type=submit]:hover, button:hover {
     background-color: $accent-color;
     color: $background-color;
 }
 
-header, footer, #subNavbar, #mainSubNavbarHr {
+footer, #titleArea, navbar, #sub-navbar, #search-button, #menu-hamburger, #search-box {
     z-index: 10;
-}
-header {
     position: fixed;
-    display: grid;
-    width: 100%;
+    backdrop-filter: blur(10px);
+}
+footer, navbar, #sub-navbar, #search-button, #menu-hamburger, #search-box {
+    background-color: rgba($color: $div-color, $alpha: 0.4);
+}
 
-    #titleArea {
-        grid-row: 1;
-        grid-column: 1;
-        font-family: titleFont;
-        font-size: 3rem;
-        display: inline-block;
-        text-align: center;
-    }
-
-    navbar {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
-        vertical-align: middle;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-        padding: 10px;
-    }
+#titleArea {
+    font-family: titleFont;
+    font-size: 2.5rem;
+    display: inline-block;
+    background-color: rgba($color: $accent-color, $alpha: 0.2);
+    padding: 2px 20px 10px 2px;
+    border-bottom-right-radius: 20px;
 
     a, a:active, a:link, a:visited {
         color: $font-color;
-        transition: 0.3s;
         text-align: center;
     }
     a:hover {
         color: $accent-color;
+        font-size: 120%;
     }
 }
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-image: linear-gradient(to top, $background-color, rgba(0, 0, 0, 0));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-main {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
+
+/* TODO: Change right to 60px once search function could be implemented */
+navbar, #menu-hamburger {
+    right: 10px;
+    border-radius: 0 0 20px 20px;
+    vertical-align: middle;
+    height: 50px;
 }
 navbar {
+    text-transform: uppercase;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    width: fit-content;
+
+    a, a:active, a:link, a:visited {
+        color: $font-color;
+        text-align: center;
+    }
+    a:hover {
+        color: $accent-color;
+        font-size: 120%;
+    }
+}
+navbar .selected-domain {
+    color: $font-color;
+}
+#menu-hamburger {
+    width: 50px;
+    cursor: pointer;
+}
+#menu-hamburger:hover > i {
+    color: $accent-color;
+    transform: scale(1.4);
+}
+#menu-hamburger:hover + navbar {
     display: flex;
-    align-items: center;
-    text-align: center;
+    top: 40px;
+    right: 40px;
+}
+
+#sub-navbar {
+    display: flex;
+    flex-direction: row;
+    right: -200px;
+    top: 60px;
+    width: 200px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 20px 0 0 20px;
+}
+#sub-navbar:hover {
+    right: 0;
+}
+#sub-navbar-arrow {
+    width: 0;
+    height: 0;
+    border-right: 10px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    align-self: center;
+}
+#sub-navbar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+    width: 100%;
+
+    a, a:active, a:link, a:visited {
+        color: $font-color;
+        text-align: right;
+    }
+    a:hover {
+        color: $accent-color;
+        font-size: 120%;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    navbar {
+        display: flex;
+        flex-direction: row;
+    }
+    #menu-hamburger {
+        display: none;
+    }
+}
+@media screen and (max-width: 829.9px) {
+    navbar {
+        display: none;
+        flex-direction: column;
+        height: fit-content;
+        border-radius: 20px;
+    }
+    navbar:hover {
+        display: flex;
+        top: 40px;
+        right: 40px;
+    }
+    #menu-hamburger {
+        display: flex;
+    }
+}
+
+#search-button {
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    vertical-align: middle;
     justify-content: center;
+    cursor: pointer;
+}
+#search-box {
+    display: none;
+    top: 40px;
+    right: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+#search-button:hover > i {
+    color: $accent-color;
+    transform: scale(1.4);
+}
+#search-button:hover + #search-box, #search-box:hover, #search-box:focus-within {
+    display: flex;
+}
+
+footer {
+    align-self: center;
+    bottom: -25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: 75px;
+    border-radius: 20px 20px 0 0;
+}
+footer:hover {
+    bottom: 0;
+}
+
+main {
+    margin: 70px 10px 30px 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .updatedDate {
@@ -225,91 +341,11 @@ navbar {
     background-color: $accent-color;
 }
 
-#headerBackdrop {
-    z-index: 9;
-    position: fixed;
-    width: 100%;
-    background-image: linear-gradient(to bottom, $background-color, rgba(0, 0, 0, 0));
-    pointer-events: none;
-}
-
-#subNavbar {
-    position: fixed;
-    display: flex;
-
-    a {
-        padding: 10px;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        color: $font-color;
-    }
-    a, a:active, a:link, a:visited {
-        color: $font-color;
-        transition: 0.3s;
-        display: block;
-    }
-    a:hover {
-        color: $accent-color;
-    }
-}
-
-#mainSubNavbarHr {
-    position: fixed;
-}
-
-@media screen and (min-width: 600px) {
-    header {
-        grid-template-columns: 200px auto;
-        grid-template-rows: auto;
-    }
-
-    navbar {
-        grid-row: 1;
-        grid-column: 2;
-    }
-
-    #subNavbar {
-        width: 150px;
-        flex-direction: column;
-        text-align: left;
-    }
-
-    #mainSubNavbarHr {
-        display: none;
-        height: 0;
-    }
-}
-
-@media screen and (max-width: 599px) {
-    header {
-        grid-template-rows: auto auto;
-        grid-template-columns: auto;
-    }
-
-    navbar {
-        grid-row: 2;
-        grid-column: 1;
-    }
-
-    #subNavbar {
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #mainSubNavbarHr {
-        display: block;
-        height: 0.1px;
-    }
-}
-
 .tryMe, .srcCodeButton, .demoButton {
     background-color: $background-color;
     display: inline-block;
     text-decoration: none;
     border-radius: 10px;
-    transition: 0.3s;
     a, a:visited, a:active, a:link, a:hover {
         text-decoration: none;
     }
@@ -330,7 +366,7 @@ navbar {
 .srcCodeButton::after {
     content: "src";
 }
-.demoButton::before {
+.demoButton::after {
     content: "Demo";
 }
 
@@ -341,13 +377,13 @@ navbar {
     vertical-align: middle;
     justify-content: center;
     border-radius: 10px;
-    transition: 0.3s;
 }
-.socialsLink:hover {
-    background-color: $accent-color;
+.socialsLink:hover > i {
+    color: $accent-color;
+    transform: scale(1.4);
 }
 
-.fa, .fab, .fas {
+.fa, .fab, .fas, .fa-solid {
     display: inline-block;
     vertical-align: middle;
     justify-content: center;
@@ -372,7 +408,6 @@ navbar {
 }
 .collapseTitle:hover {
     background-color: $accent-color;
-    transition: 0.3s;
     * {
         color: $font-color;
     }
