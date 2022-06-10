@@ -1,1 +1,0 @@
-console.log("Hello, the bundle has been loaded!");
