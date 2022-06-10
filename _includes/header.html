@@ -1,15 +1,69 @@
-<header>
-  <div id="titleArea">
-    <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+<div id="titleArea">
+  <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+</div>
+
+{%- if page.layout == "collection_item" -%}
+  <div id="sub-navbar">
+    <div id="sub-navbar-arrow">
+      
+    </div>
+    <div id="sub-navbar-content">
+      {%- case page.type -%}
+
+      {%- when "project" -%}
+        {%- for project in site.projects -%}
+          {%- if page.url contains project.url -%}
+            <a href="{{ project.url }}" style="color: lightcoral">{{ project.title }}</a>
+          {%- else -%}
+            <a href="{{ project.url }}">{{ project.title }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+  
+      {%- when "blog" -%}
+        {%- for entry in site.entries -%}
+          {%- if page.url contains entry.url -%}
+            <a href="{{ entry.url }}" style="color: lightcoral">{{ entry.title }}</a>
+          {%- else -%}
+            <a href="{{ entry.url }}">{{ entry.title }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+  
+      {%- when "article" -%}
+        {%- for article in site.articles -%}
+          {%- if page.url contains article.url -%}
+            <a href="{{ article.url }}" style="color: lightcoral">{{ article.title }}</a>
+          {%- else -%}
+            <a href="{{ article.url }}">{{ article.title }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+  
+      {%- when "bio" -%}
+        {%- for item in site.bio -%}
+          {%- if page.url contains item.url -%}
+            <a href="{{ item.url }}" style="color: lightcoral">{{ item.title }}</a>
+          {%- else -%}
+            <a href="{{ item.url }}">{{ item.title }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+  
+      {%- endcase -%}
+    </div>
   </div>
-  <navbar>
-    {%- assign pages = site.pages | where: "show-in-nav", true | sort: "nav-display-order" -%}
-    {%- for p in pages -%}
-      {%- if page.url contains p.url -%}
-        <a href="{{ site.baseurl }}{{ p.url }}" style="color: lightcoral">{{ p.title | escape }}</a>
-      {%- else -%}
-        <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title | escape }}</a>
-      {%- endif -%}
-    {%- endfor -%}
-  </navbar>
-</header>
+{%- endif -%}
+
+<div id="menu-hamburger">
+  <i class="fa-solid fa-bars"></i>
+</div>
+
+<navbar>
+  {%- assign pages = site.pages | where: "show-in-nav", true | sort: "nav-display-order" -%}
+  {%- for p in pages -%}
+    {%- if page.url contains p.url -%}
+      <a href="{{ site.baseurl }}{{ p.url }}" class="selected-domain">{{ p.title | escape }}</a>
+    {%- else -%}
+      <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title | escape }}</a>
+    {%- endif -%}
+  {%- endfor -%}
+</navbar>
+
+<!-- TODO: Add search button & box -->
