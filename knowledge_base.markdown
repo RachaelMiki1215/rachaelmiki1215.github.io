@@ -7,4 +7,6 @@ show-in-nav: true
 nav-display-order: 2
 is-top-page: true
 ---
-(Under Construction)
+Sorry, I still don't have any flashy CSS or JS display here :/
+
+Please look inside the tab to your for a list of articles -->
