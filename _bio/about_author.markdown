@@ -5,6 +5,9 @@ title: About Author
 show-in-nav: false
 is-top-page: false
 show-header: false
+keywords:
+  - About
+  - Author
 ---
 
 <style>

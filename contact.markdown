@@ -5,6 +5,8 @@ permalink: /contact/
 show-in-nav: true
 nav-display-order: 5
 is-top-page: true
+keywords:
+  - Contact
 ---
 
 <style>

@@ -4,6 +4,8 @@ title: Attributes
 permalink: /attributes/
 show-in-nav: true
 nav-display-order: 6
+keywords:
+  - Attributes
 
 attributes:
   - name: digital geometric Font
