@@ -9,4 +9,4 @@ is-top-page: true
 ---
 Sorry, I still don't have any flashy CSS or JS display here :/
 
-<-- Please look to your left for a list of projects.
+Please look inside the tab to your for a list of projects -->
