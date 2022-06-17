@@ -11,8 +11,6 @@ keywords:
   - Resume
 ---
 
-{% assign gitHubUser="RachaelMiki1215" %}
-
 <style>
 
     main {
@@ -34,12 +32,11 @@ keywords:
         width: 250px;
         height: 250px;
         margin: auto;
-    }
-    #profImg>img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
         border-radius: 50%;
+        background-image: url("/assets/images/resume_photo.png");
+        background-size: 150%;
+        background-position: 0% 40%;
+        transform: rotate(10deg);
     }
 
     #qrCodeSection {
@@ -330,7 +327,6 @@ keywords:
     <div class="section1">
         <div id="profImgNameSection">
             <div id="profImg">
-                <img src="/assets/images/RachaelMiki1215.png" />
             </div>
             <h3>Rachael Buxton</h3>
             <h5>Software System Engineer</h5>
