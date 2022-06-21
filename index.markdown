@@ -6,4 +6,11 @@ keywords:
   - home
   - top
 ---
-You'll be redirected to the new site shortly 🥳
+
+## Hello!👋
+
+You are currently looking at my **old** portfolio website.
+
+Here is [my **new** website](https://rachesdynamicportfoliowebsite.azurewebsites.net/).
+
+If you would like to fly directly to my latest resume, please click [here](https://rachesdynamicportfoliowebsite.azurewebsites.net/Resume).
